@@ -1,0 +1,260 @@
+body{
+    background-color: pink;
+}
+body h1{
+    font-family: "Matemasie", sans-serif;
+    font-size: 3vw;
+    width: 65vw;
+    text-align: center;
+    margin-left: 15%;
+}
+
+/*          IMG               */
+img#img1{
+    position: absolute;
+    rotate: 90deg;
+    margin-left: 3vw;
+    width: 150px;
+    cursor: pointer;
+}
+
+img#img2{
+    position: relative;
+    rotate: 90deg;
+    margin-left: 3vw;
+    width: 150px;
+    margin-top: 20vh;
+    cursor: pointer;
+}
+
+img#img3{
+    position: absolute;
+    rotate: 90deg;
+    margin-left: -10vw;
+    width: 150px;
+    margin-top: 40vh;
+    cursor: pointer;
+}
+
+/*          BOTOES               */
+button#botao1{
+    position: absolute;
+    background-color: rgb(158, 55, 179);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5vh;
+    width: 20vw;
+    height: 10vh;
+    margin-top: 9vh;
+    margin-left: 12vw;
+    cursor: pointer;
+}
+
+button#botao2{
+    position: absolute;
+    background-color: rgb(158, 55, 179);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5vh;
+    width: 25vw;
+    height: 10vh;
+    margin-top: 29vh;
+    margin-left: -0.5vw;
+    cursor: pointer;
+}
+
+button#botao3{
+    position: absolute;
+    background-color: rgb(158, 55, 179);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.5vh;
+    width: 20vw;
+    height: 10vh;
+    margin-top: 49vh;
+    margin-left: -0.5vw;
+    cursor: pointer;
+}
+
+/*          BOTOES P               */
+button#botao1 p{
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+
+button#botao2 p{
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    margin-top: 1vh;
+}
+
+button#botao3 p{
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    margin-top: 1vh;
+}
+
+/*          BOTOES HOVER               */
+button#botao1:hover{
+    background-color: rgb(212, 0, 255);
+    transition: 0.5s ease-in-out;
+}
+
+button#botao2:hover{
+    background-color: rgb(212, 0, 255);
+    transition: 0.5s ease-in-out;
+}
+
+button#botao3:hover{
+    background-color: rgb(212, 0, 255);
+    transition: 0.5s ease-in-out;
+}
+
+/*          CONTEUDOS               */
+#conteudo1{
+    background-color: rgb(252, 164, 255);
+    border-radius: 28px;
+    animation: aparecer 2s;
+    width: 50vw;
+    height: 50vh;
+    margin-left: 40vw;
+    margin-top: 12vh;
+}
+#conteudo1 p{
+    position: absolute;
+    font-family: "Oswald",sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    width: 40vw;
+    text-align: center;
+    margin-left: 5vw;
+    animation: aparecerP 3s ease-in;
+}
+
+#conteudo2{
+    background-color: rgb(252, 164, 255);
+    border-radius: 28px;
+    animation: aparecer2 2s;
+    width: 50vw;
+    height: 68vh;
+    margin-left: 40vw;
+    margin-top: -18vh;
+}
+#conteudo2 p{
+    position: absolute;
+    font-family: "Oswald",sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    width: 40vw;
+    text-align: center;
+    margin-left: 5vw;
+    animation: aparecerP 3s ease-in;
+}
+
+#conteudo3{
+    background-color: rgb(252, 164, 255);
+    border-radius: 28px;
+    animation: aparecer3 2s;
+    width: 50vw;
+    height: 112vh;
+    margin-left: 40vw;
+    margin-top: 2vh;
+}
+#conteudo3 p{
+    position: absolute;
+    font-family: "Oswald",sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    width: 40vw;
+    text-align: left;
+    margin-left: 5vw;
+    animation: aparecerP 3s ease-in;
+}
+
+/*          CLASSES                 */  
+.esconder{
+    display: none;
+}
+
+.girar{
+    animation: girarSorvete 1.5s ease-in-out;
+}
+
+.girar#img1{
+    rotate: 0deg;
+}
+
+.girar#img2{
+    rotate: 0deg;
+}
+
+.girar#img3{
+    rotate: 0deg;
+}
+
+.ajustarBotao#botao3{
+    position: absolute;
+    margin-top: 15vh;
+    margin-left: 12.5vw;
+}
+
+.ajustarImagem#img3{
+    margin-top: 7vh;
+    margin-left: 3vw;
+}
+
+.ajustarCont#conteudo3{
+    margin-top: 13.5vh;
+}
+/*          ANIMAÇÕES               */
+@keyframes aparecerP{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes aparecer{
+    from{
+        width: 0;
+        height: 0;
+    }
+    to{
+        width: 50vw;
+        height: 50vh;
+    }
+}
+@keyframes aparecer2{
+    from{
+        width: 0;
+        height: 0;
+    }
+    to{
+        width: 50vw;
+        height: 68vh;
+    }
+}
+@keyframes aparecer3{
+    from{
+        width: 0;
+        height: 0;
+    }
+    to{
+        width: 50vw;
+        height: 112vh;
+    }
+}
+@keyframes girarSorvete{
+    from{
+        rotate: 90deg;
+    }
+    to{
+        rotate: 0deg;
+    }
+}
